@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "itemType": "workout",
+    "workout_name": "bench press",
+    "workout_part": "chest",
+    "workout_rep": "7-10",
+    "workout_weight": "135lbs",
+    "workout_desc": "The barbell bench press is often performed with a shoulder width overhand grip. It primarily targets the chest. There are different variations to help target different portions of the chest."
+  }
+]
