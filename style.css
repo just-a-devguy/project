@@ -134,6 +134,15 @@ nav {
   flex-direction: column;
 }
 
-.workout-btn {
-  
+#workoutForm {
+  gap: 0rem;
+}
+
+.card {
+  border: 1px solid black;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
