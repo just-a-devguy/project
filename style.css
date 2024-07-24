@@ -146,3 +146,25 @@ nav {
   align-items: center;
   flex-direction: column;
 }
+
+button {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0.25rem 0rem;
+  background: linear-gradient(to bottom left, #FF00D6, #FF4D00);
+  /* Initial gradient */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s ease;
+  font-weight: bold;
+  /* Transition property */
+}
+
+button:hover {
+  background: linear-gradient(to bottom right, #FF00D6, #FF4D00);
+  /* Hover background color */
+}
