@@ -10,7 +10,7 @@ function createCardContainer() {
 }
 
 // Creates a single workout card
-function createCard(title, content, imgSource) {
+function createCard(title, content, imgSource, navLink) {
     // Create card
     const card = document.createElement("div");
     card.className = 'card';
@@ -19,6 +19,12 @@ function createCard(title, content, imgSource) {
     card.style.borderRadius = '5px';
     card.style.boxShadow = '0 5px 6px rgba(0, 0, 0, 0.3)';
     card.style.cursor = 'pointer';
+
+    if (navLink) {
+        card.onclick = function() {
+            location.href = navLink;
+        };
+    }
 
     // Create card image
     if (imgSource) {
@@ -51,10 +57,16 @@ function createCard(title, content, imgSource) {
 }
 
 // Add a workout button
-function addWorkoutButton() {
+function addWorkoutButton(navLink) {
     const addWorkoutButton = document.createElement('button');
     addWorkoutButton.textContent = "View Workout History";
     addWorkoutButton.style.marginBottom = '1rem';
+    
+    if (navLink) {
+        addWorkoutButton.onclick = function() {
+            location.href = navLink;
+        };
+    }
 
     return addWorkoutButton;
 }
@@ -65,7 +77,7 @@ function render() {
     const container = createCardContainer();
 
     // Create a few card components with images
-    const card1 = createCard('Bench Press', 'Read More', './img/bench.jpg');
+    const card1 = createCard('Bench Press', 'Read More', './img/bench.jpg', './workout-information.html');
     const card2 = createCard('Squat', 'Read More', './img/squat.jpg');
     const card3 = createCard('Pull-Up', 'Read More', './img/pull-up.jpg');
     const card4 = createCard('Deadlift', 'Read More', './img/deadlift.jpg');
@@ -76,7 +88,7 @@ function render() {
     container.appendChild(card4);
 
     app.appendChild(container);
-    app.appendChild(addWorkoutButton());
+    app.appendChild(addWorkoutButton('./history.html'));
 }
 
 render();

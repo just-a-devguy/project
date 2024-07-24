@@ -1,11 +1,30 @@
 [
   {
+    "id": 0,
+    "date": "Mon 1/2",
+    "workout_title": "Chest & Tris",
+    "duration": "79 mins",
+    "": ""
+  },
+  {
     "id": 1,
-    "itemType": "workout",
-    "workout_name": "bench press",
-    "workout_part": "chest",
-    "workout_rep": "7-10",
-    "workout_weight": "135lbs",
-    "workout_desc": "The barbell bench press is often performed with a shoulder width overhand grip. It primarily targets the chest. There are different variations to help target different portions of the chest."
+    "date": "Tues 1/3",
+    "workout_title": "Back & Biceps",
+    "duration": "42 mins",
+    "": ""
+  },
+  {
+    "id": 2,
+    "date": "Wed 1/4",
+    "workout_title": "Quads & Hamstrings",
+    "duration": "75 mins",
+    "": ""
+  },
+  {
+    "id": 3,
+    "date": "Thu 1/5",
+    "workout_title": "Shoulders & Abs",
+    "duration": "62 mins",
+    "": ""
   }
 ]

@@ -128,12 +128,6 @@ function createBackToWorkoutButton(navLink) {
     return backToWorkoutButton;
 }
 
-// Example of how to use the function to append the button to the DOM
-document.addEventListener('DOMContentLoaded', () => {
-    const app = document.getElementById('app');
-    const backToWorkoutButton = createBackToWorkoutButton();
-    app.appendChild(backToWorkoutButton);
-});
 
 
 function renderWorkoutInfo() {
@@ -147,7 +141,7 @@ function renderWorkoutInfo() {
 
     app.appendChild(createCopy("Chest", "7-10", "135 lbs", "The barbell bench press is often performed with a shoulder width overhand grip. It primarily targets the chest. There are different variations to help target different portions of the chest."));
 
-    app.appendChild(createBackToWorkoutButton('index.html'));
+    app.appendChild(createBackToWorkoutButton('new-workout.html'));
 }
 
 renderWorkoutInfo();
